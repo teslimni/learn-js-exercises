@@ -1,0 +1,30 @@
+body {
+    background: khaki;
+}
+
+.container {
+    border: 4px solid olivedrab;
+    height: 100vh;
+    margin: 100px auto;
+    width: 60%;
+}
+
+.items {
+    border: 1px solid orangered;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 20px;
+    height: 99%;
+    margin: 2px;
+    justify-content: center;
+    align-content: center;
+}
+
+.item:nth-child(even) {
+    background: rgb(129, 125, 86);
+}
+
+.item:nth-child(odd) {
+    background: skyblue;
+}
